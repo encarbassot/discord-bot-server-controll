@@ -51,13 +51,14 @@ from the developer portal you can get the **CLIENT_ID** and **TOKEN**
 - **CLIENT_ID** in the page **general information** in the developers portal, copy **APPLICATION ID**
 - **CLIENT_ID** go to the **bot** page in the developers portal and click regenerate token
 - **ADMIN_ID** its the ID of your user. 
+
 ![](./images/userid.png)
 
 (*) to activate **developer options** go to **settings** >> **advanced** >> **developer mode**
 
 ### 3. run the project
 
-first of all you must declare to discord the commands you are using, for this you must execute `npm run deplou-commands` this will execute the file **deploy-commands.js** this reads the array `commands`from **index.js** that contains all commands
+first of all you must declare to discord the commands you are using, for this you must execute `npm run deploy-commands` this will execute the file **deploy-commands.js** this reads the array `commands`from **index.js** that contains all commands
 
 once deployed the project you can run it using `npm run dev` or `npm run start`.
 if you want to use it in your server considere using [pm2](https://www.npmjs.com/package/pm2)
