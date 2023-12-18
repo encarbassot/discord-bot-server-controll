@@ -55,3 +55,9 @@ from the developer portal you can get the **CLIENT_ID** and **TOKEN**
 
 (*) to activate **developer options** go to **settings** >> **advanced** >> **developer mode**
 
+### 3. run the project
+
+first of all you must declare to discord the commands you are using, for this you must execute `npm run deplou-commands` this will execute the file **deploy-commands.js** this reads the array `commands`from **index.js** that contains all commands
+
+once deployed the project you can run it using `npm run dev` or `npm run start`.
+if you want to use it in your server considere using [pm2](https://www.npmjs.com/package/pm2)
