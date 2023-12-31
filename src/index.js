@@ -24,12 +24,14 @@ client.on(Events.ClientReady, () => {
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity({ name: "Minecraft", type: ActivityType.Playing });
 
-
-  client.users.fetch('568761587595214851').then( (channel) => {
-    channel.send(`Server has started\n` + (ipUpdates.hasChanged?`IP HAS CHANGED!\n${ipUpdates.ip}\nit hasn't changed since ${ipUpdates.date}`:`No ip changes.`))
+  // client.channels.fetch //to send the message to a server channel
+  client.users.fetch(process.env.ADMIN_ID).then( (channel) => {
+    channel.send(`Server has started\n` + (
+      ipUpdates.hasChanged
+      ?`IP HAS CHANGED!\n${ipUpdates.ip}\nit hasn't changed since ${ipUpdates.date}`
+      :`No ip changes.`
+    ))
   })
-  
-
   
 });
 
@@ -50,7 +52,3 @@ client.on(Events.InteractionCreate, (interaction) => {
 });
 
 client.login(process.env.TOKEN);
-
-
-
-// send message "Server is booted"
