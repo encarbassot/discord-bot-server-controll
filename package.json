@@ -16,6 +16,7 @@
     "axios": "^1.6.2",
     "child_process": "^1.0.2",
     "discord.js": "^14.14.1",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security"
   }
 }

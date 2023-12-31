@@ -1,4 +1,4 @@
-import axios from "axios";
+import { myIP } from "../utils/ip.js";
 
 export const name = "ip";
 export const description = "Replies with current IP address";
@@ -9,7 +9,4 @@ export async function callback(client, interaction) {
   await interaction.reply(ip);
 }
 
-export async function myIP() {
-  const { data } = await axios("https://api.ipify.org/");
-  return data;
-}
+

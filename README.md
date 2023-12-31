@@ -1,6 +1,15 @@
 # discord-bot-server-controll
 This discor bot is util to manage your server
 
+## Server sends message on boot
+sends a private message when server restarts. also tells info about the IP address
+
+in case of change
+![ip changed](./images//alert-ipchanged.png)
+
+in case of not changing
+![ip stay](./images//alert-ipstay.png)
+
 ## Servers with dinamic IP
 
 the command **/ip** returns the current ip of the server.
@@ -62,3 +71,9 @@ first of all you must declare to discord the commands you are using, for this yo
 
 once deployed the project you can run it using `npm run dev` or `npm run start`.
 if you want to use it in your server considere using [pm2](https://www.npmjs.com/package/pm2)
+
+
+
+# TODO
+- use embdededs
+- command /js set console.prototype.log to then return it
